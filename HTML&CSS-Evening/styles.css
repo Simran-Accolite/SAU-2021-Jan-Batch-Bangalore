@@ -1,0 +1,225 @@
+.container{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 60%;
+  height: 33%;
+}
+.weight {
+  font-weight:35px;
+  font-size: 25px;
+}
+.details{
+  background:#1b1209;
+  grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: url('left.jpg');
+    background-size: cover;
+    text-align:center;
+}
+main{
+    
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:2;
+    grid-column-end:5;
+    background: url('top.jpg') no-repeat;
+    background-size:cover;
+}
+#content1{
+    background:#afeeee ;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+
+}
+#content2{
+    background:#afeeaf;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:4;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+#content3{
+    background: #f7c4c8;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:4;
+    grid-column-end:5;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+#content4{
+  background:#E4D4C8;
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:2;
+  grid-column-end:3;
+  text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+#content5{
+  background: #cec1e7;
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end:4;
+  text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+#content6{
+  background:#FFFFBA;
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:4;
+  grid-column-end:5;
+  text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+#content1:hover{
+  opacity: 0.9;
+}
+#content2:hover{
+  opacity: 0.6;
+}
+#content3:hover{
+  opacity: 0.9;
+}
+#content4:hover{
+  opacity: 0.4;
+}
+#content5:hover{
+  opacity: 0.9;
+}
+#content6:hover{
+  opacity: 0.4;
+}
+
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+.social-button__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: 100%;
+  height: 100%;
+  margin-left: -50%;
+}
+.social-button--envelope {
+  color: #0072c6;
+}
+.social-button--envelope::after {
+  background: #0072c6;
+}
+.social-button--contact1 {
+  color: #3b5999;
+}
+.social-button--contact1::after {
+  background: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--github::after {
+  background: #6e5494;
+}
+.social-button--hackerrank {
+  color: green;
+}
+.social-button--hackerrank::after {
+  background: green;
+}
+
+.social-button--contact {
+  color: #eec900;
+}
+.social-button--contact::after {
+  background: #eec900;
+}
+

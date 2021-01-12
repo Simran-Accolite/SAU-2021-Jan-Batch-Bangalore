@@ -1,0 +1,144 @@
+.section{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+}
+.section1{
+    background:#afeeee ;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+
+}
+.section7{
+    background:#afeeee  ;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+    /*font-family: fantasy;
+    font-weight:50px;
+    font-size: 25px;*/
+}
+.section2{
+    background:#afeeaf ;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section8{
+    background: #afeeaf ;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section3{
+    background: #f7c4c8 ;
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section9{
+    background:#f7c4c8 ;
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section4{
+    background: #E4D4C8 ;
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section10{
+    background: #E4D4C8 ;
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section5{
+    background:#cec1e7 ;
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section11{
+    background: #cec1e7 ;
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section6{
+    background: #FFFFBA ;
+    grid-row-start:6;
+    grid-row-end:7;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.section12{
+    background:#FFFFBA ;
+    grid-row-start:6;
+    grid-row-end:7;
+    grid-column-start:2;
+    grid-column-end:3;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Sofia";
+}
+.information{
+    text-align:top-left;
+    position: relative;
+  left: 5px;
+  top: 5px;
+  
+}
