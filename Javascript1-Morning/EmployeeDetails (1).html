@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <script type="text/javascript">
+
+function validateForm ()
+{
+
+    var valid=true;
+    var form = document.forms["Employee_Details"]
+    var firstName = form["First_Name"]
+    var lastName = form["Last_Name"]
+    var mobileNumber = form["MobileNumber"]
+    var email = form["email"]
+    var gender = form["gender"]
+    var location = form["location"]
+    var choice = form["choice"]
+
+    if(firstName.value =="")
+    {
+        alert("Enter First Name!!!");
+        valid=false;
+    }
+    if(lastName.value =="")
+    {
+        alert("Enter Last Name!!!");
+        valid=false;
+    }
+    if(mobileNumber.value =="")
+    {
+        alert("Enter Mobile Number!!!");
+        valid=false;
+    }
+    if(email.value == "")
+    {   alert("Enter proper email address!!!");
+        valid=false;
+    }
+    if((gender[0].checked==false) && (gender[1].checked==false))
+    {
+        alert('Please select Gender!!!');
+        valid=false;
+    }
+    if(location.selectedIndex==0)
+    {
+        alert('Enter location details!!!');
+        valid=false;
+    }
+    if(choice.checked==false){
+        alert('Please agree to the conditions first!!!');
+        valid=false;
+    }
+    if(valid==true){
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var email = document.getElementById("emailid").value;
+
+
+        document.getElementById("lengthFN").innerHTML = firstName;
+        document.getElementById("lengthLN").innerHTML = lastName;
+        document.getElementById("lengthMob").innerHTML = mobileNumber;
+        document.getElementById("lengthEmail").innerHTML = email;
+    }
+
+
+}
+    </script>
+</head>
+<body>
+    <form name="Employee_Details" method="post" action="" onsubmit="validateForm();return false">
+        <h1> Please Enter Your Details</h1>
+        <p>First Name: <input type="text" id="firstName" name="First_Name" placeholder="Enter only alphabets" pattern="[a-zA-Z]+"></p>
+        <p>Last Name: <input type="text" id="lastName" name="Last_Name" placeholder="Enter only alphabets" pattern="[a-zA-Z]+"></p>
+        <p>Mobile Number: <input type="text" id="mobileNumber" name="MobileNumber" placeholder="Enter 10 digit number" pattern="[0-9]+" minlength="10" maxlength="10"></p>
+        <p>Email Address:<input type="email" id="emailid" name="email" placeholder="For ex: abc@gmail.com" pattern="^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+$"></p>
+        <p>Gender: <input type="radio" id="gender" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female</p>
+        <p>Office Location:
+            <select name="location">
+                <option value="">Please select any one option:</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+            </select></p>
+        <p>Do you agree to submit your details?
+            <input type="checkbox" name="choice" value="Yes">Yes</input>
+
+        </p>
+        <p><input type="submit" name="send" value="Send Details"></p>
+    </form>
+    <hr>
+    <br>
+    <h4>First Name: <span id = "lengthFN"></span></h4>
+    <h4>Last Name: <span id = "lengthLN"></span></h4>
+    <h4>Mobile Number: <span id = "lengthMob"></span></h4>
+    <h4>Email: <span id = "lengthEmail"></span></h4>
+
+
+
+</body>
+</html>
