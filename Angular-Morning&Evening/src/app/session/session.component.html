@@ -1,0 +1,42 @@
+<div class="sessions">
+    <button id="start" class="navigate"><a id="link" routerLink="nav">TODO List</a></button>
+    <button id="start" class="addSession" (click)=newSessionAdd()><i class="fas fa-plus"></i></button>
+    
+    <div class="newSession {{ (newSession? '' : 'hide') }}">
+    <form>
+        <label for="title" id="head" class="add">Add a new Session</label>
+        <br>
+        <input type="text" name="title" id="title" class="add" placeholder="Enter title" [(ngModel)]="inputTitle">      
+        <input type="text" name="trainer" id="trainer" class="add" placeholder="Enter trainer name" [(ngModel)]="inputTrainer">       
+        <input type="text" name="details" id="details" class="add" placeholder="Enter details" [(ngModel)]="inputDetails">
+        <input type="date" name="date" id="date" class="add" [(ngModel)]="inputDate">
+        <br>
+        <button type="submit" value="submit" class="submit" (click)=addSession()><i class="fas fa-check-circle"></i></button>
+        <br>
+    </form>
+    </div>
+    <div *ngFor="let session of sessions; let i = index" class="session {{ (session.isVisible ? '' : 'deleted') }}">
+        <div (click)=showDetails(i)>
+            <div id="name">{{ session.name }}</div><br>
+            <div class="trainer">{{ session.trainer }}</div><br>
+            <div class="date">{{ session.date }}</div><br>
+            <div class="details {{ (session.showDetails? '' : 'hide') }}">{{ session.details }}</div><br>
+        </div>
+        <div class="editor {{ (session.edit? '' : 'hide') }}">
+            <form>
+                <input type="text" name="title" id="title" class="add" placeholder="Enter title" [(ngModel)]="inputTitle">      
+                <input type="text" name="trainer" id="trainer" class="add" placeholder="Enter trainer name" [(ngModel)]="inputTrainer">       
+                <input type="text" name="details" id="details" class="add" placeholder="Enter details" [(ngModel)]="inputDetails">
+                <input type="date" name="date" id="date" class="add" [(ngModel)]="inputDate">
+                <br>
+                <button type="submit" value="Update" class="clickables" (click)=editSession(i)><i class="fas fa-check-circle"></i></button>
+                <br>
+            </form>
+        </div>
+        <div >
+            <button class="clickables" (click)=enableEditor(i)><i class="fas fa-edit"></i></button>
+            <button class="clickables" style="background-color: red;" (click)=deleteSession(i)><i class="fas fa-trash-alt"></i></button>
+        </div>
+        
+    </div>
+</div>

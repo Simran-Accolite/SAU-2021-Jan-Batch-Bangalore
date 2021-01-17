@@ -1,0 +1,113 @@
+
+#head {
+	font-weight: bolder;
+	font-size: larger;
+	color: #6acf83;
+}
+.session {
+	display: inline-grid;
+	padding: left 10px;
+	width:700px;
+	margin: 0 10px 10px;
+	font-size: 20px;
+	text-align: left;
+	border: 1px solid black; 
+	background-color: #fdfd96;
+}
+
+.session:nth-child(even) {
+	background-color: #f3ffbd;
+	
+}
+
+#name{
+	text-align: center;
+	font-weight: bolder;
+	font-size: larger;
+	color: #6acf83;
+}
+
+#link {
+	text-decoration: none;
+	color: #EEE;
+}
+
+
+
+
+
+.details.hide {
+	display: none;
+}
+
+.editor.hide {
+	display: none;
+}
+
+.newSession.hide {
+	display: none;
+}
+
+.session.deleted {
+	display: none;
+}
+
+.add {
+	width: 10%;
+	padding: 10px 15px;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 15px;
+	outline: none;
+}
+
+.clickables {
+	display: inline;
+	width: 50%;
+	max-width: 50px;
+	border-radius: 50px;
+	
+	
+	background-color: skyblue;
+	color: #FFF;
+	
+	padding: 10px 15px;
+}
+.addSession {
+	display: grid;
+	width: 50%;
+	max-width: 50px;
+	border-radius: 50px;
+	
+	
+	background-color: skyblue;
+	color: #FFF;
+	
+	padding: 10px 15px;
+}
+.navigate {
+	display: inline;
+	width: 100%;
+	max-width: 100px;
+	
+	
+	background-color: skyblue;
+	color: #FFF;
+	
+	padding: 10px 15px;
+}
+.submit {
+	display: grid;
+	width: 50%;
+	max-width: 50px;
+	border-radius: 50px;
+	
+	background-color: skyblue;
+	color: #FFF;
+	
+	padding: 10px 15px;
+}
+#start {
+	background-color: #6acf83;
+	border-color: #6acf83;
+}

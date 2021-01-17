@@ -1,0 +1,8 @@
+<button id="start" class="back"><a id="link" routerLink=""><i class="fas fa-chevron-circle-left"></i></a></button>
+<div *ngFor="let todo of todos | slice:0:20; let i = index" class="list">
+    <!-- <div class="id">{{ i }}</div> -->
+    <div (click)=showTodo(i)>
+        <div class="heading">Todo {{ todo.id }}</div><br>
+        <div class="data {{ (todo.display? '' : 'hide') }}" style="text-align: left;">{{ todo.title }}</div><br>
+    </div>
+</div>
