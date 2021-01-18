@@ -1,0 +1,17 @@
+.todo--completed h3{
+    text-decoration: line-through;
+}
+.todo--completed{
+    opacity: 0.5;
+}
+/*.task-container{
+    display: flex;
+  justify-content: center;
+  
+}
+*/
+.task-container{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
